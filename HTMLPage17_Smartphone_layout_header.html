@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0; padding:0;
+        }
+        li{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        #main_header{
+            height:45px;
+            position:relative;
+            text-align:center;
+            line-height:45px;
+            background-color:#0094ff;
+        }
+        #main_header > h1{
+            color:black;
+        }
+        #main_header > a, #main_header label{
+            display:block;
+            height:32px;
+            position:absolute;
+        }
+        #main_header > a.left{
+            width:80px;
+            left:10px; top:7px;
+        }
+        #main_header > label.right{
+            width:80px;
+            right:10px; top:7px;
+        }
+        #t{
+            display:none;
+        }
+        #gnb_wrap{
+            display:none; border:10px solid#333333;
+        }
+        #t:checked ~ #wrap > #gnb_wrap{
+            display:block;
+        }
+        #gnb ul{
+            background-color:#ffffff; overflow:hidden;
+        }
+        #gnb ul li{
+            float:left;
+            margin:10px 20px;
+            padding:0; padding-right:40px;
+            text-align:center;
+            font-size:1.1em;
+            border:1px solid#cccccc;
+            box-sizing:border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <input id="t" type="checkbox"/>
+    <div id="wrap">
+        <header id="main_header">
+            <a class="left" href="#none">category</a>
+            <h1>Mobile</h1>
+            <label class="right" for="t" href="#none">menu</label>
+        </header>
+        <div id="gnb_wrap">
+            <div id="gnb">
+                <ul>
+                    <li><a href="#none">gnb1</a></li>
+                    <li><a href="#none">gnb2</a></li>
+                    <li><a href="#none">gnb3</a></li>
+                    <li><a href="#none">gnb4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
