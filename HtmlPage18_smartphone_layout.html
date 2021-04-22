@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none;}
+        #header{height:100px; background-color:#3bad0a;}
+        #header .logo_wrap{height:50px;line-height:50px;text-align:center;position:relative;}
+        #header .logo_wrap a{display:inline-block;}
+        #header .logo_wrap .menu{position:absolute; left:10px;}
+        #header .logo_wrap .logo{color:white; font-size:1.2em; font-weight:bold;}
+        #header .logo_wrap .myinfo{position:absolute; right:10px;}
+        #header #search{position:relative; overflow:hidden; width:100%; height:50px;}
+        #header #search input{float:left; width:100%; height:50px; border:5px solid#2a7a08; padding:5px;box-sizing:border-box;font-size:1.2em;}
+        #header #search a{float:left; position:absolute; right:0; top:0; line-height:50px;}
+        #menu ul{overflow:hidden; margin:7px 0;}
+        #menu ul li{width:20%; height:30px; line-height:30px; text-align:center; float:left; margin:0; padding:0; border-right:1px solid#808080; box-sizing:border-box;}
+        #menu ul li:last-child{border:0;}
+        #section #section_content_01{overflow:hidden;}
+        #section #section_content_01 .row1 div{width:50%; height:135px; border:2px solid#ffffff; box-sizing:border-box; text-align:center; float:left; text-align:center; line-height:135px;}
+        #section #section_content_01 .row1 div:last-child{float:right; text-align:center; line-height:135px;}
+        #section #section_content_01 .row2 div{width:50%; height:135px; border:2px solid#ffffff; box-sizing:border-box; text-align:center; float:left; text-align:center; line-height:135px;}
+        #section #section_content_01 .row2 div:last-child{float:right; text-align:center; line-height:135px;}
+        #section #section_content_01 .row3 div{width:50%; height:135px; border:2px solid#ffffff; box-sizing:border-box; text-align:center; float:left; text-align:center; line-height:135px;}
+        #section #section_content_01 .row3 div:last-child{float:right; text-align:center; line-height:135px;}
+        #section #section_content_01 img{width:100%; height:inherit;}
+
+        #section #section_content_02{overflow:hidden; margin-top:10px;}
+        #section #section_content_02 ul li{padding:8px; border-bottom:1px solid#cccccc; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;} /*white-space~text-overflow dispaly on website ...*/
+
+        #section #section_content_03{margin-top:10px;}
+        #section #section_content_03 ul li{overflow:hidden; margin:10px; padding:10px; border:1px solid#cccccc; box-sizing:border-box;}
+        #section #section_content_03 .img{float:left; width:15%; height:100px;}
+        #section #section_content_03 .text{float:left; width:75%; height:100px;}
+        #section #section_content_03 .text span{display:block; margin-left:5px;}
+        #section #section_content_03 .text span:first-child{font-size:11px; color:#0094ff; font-weight:bold;}
+        #section #section_content_03 .text span:last-child{color:black; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+        #footer p{text-align:center; padding:5px;}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="header_wrap">
+            <div class="logo_wrap">
+                <a class="menu" href="#none" alt="menu">menu</a>
+                <a class="logo" href="#none" alt="logo">moblie logo</a>
+                <a class="myinfo" href="#none" alt="myninfo">myinfo</a>
+            </div>
+        </div>
+        <div id="search">
+            <input type="text" />
+            <a href="#none">search</a>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#none">menu1</a></li>
+            <li><a href="#none">menu2</a></li>
+            <li><a href="#none">menu3</a></li>
+            <li><a href="#none">menu4</a></li>
+            <li><a href="#none">menu5</a></li>
+        </ul>
+    </div>
+
+    <section id="section">
+        <div id="section_content_01">
+            <div class="row1">
+                <div>image1</div>
+                <div>image2</div>
+            </div>
+            <div class="row2">
+                <div>image3</div>
+                <div>image4</div>
+            </div>
+            <div class="row3">
+                <div>image5</div>
+                <div>image6</div>
+            </div>
+        </div>
+        <div id="section_content_02">
+            <ul>
+                <li><a href="#none">가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하</a></li>
+                <li><a href="#none">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz </a></li>
+                <li><a href="#none">1234567890</a></li>
+                <li><a href="#none">ABCDEFGHIJKLMNOPQRSTUVWXYZ</a></li>
+                <li><a href="#none">ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ</a></li>
+            </ul>
+        </div>
+        <div id="section_content_03">
+            <ul>
+                <li>
+                    <p class="img"><a href="#none"><img src="emblem.jpg" /></a></p>
+                    <p class="text">
+                        <a href="#none">
+                            <span>moblie webpage</span>
+                            <span>this is practice moblie webpage</span>
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><a href="#none"><img src="emblem.jpg" /></a></p>
+                    <p class="text">
+                        <a href="#none">
+                            <span>moblie webpage</span>
+                            <span>this is practice moblie webpage</span>
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><a href="#none"><img src="emblem.jpg" /></a></p>
+                    <p class="text">
+                        <a href="#none">
+                            <span>moblie webpage</span>
+                            <span>this is practice moblie webpage</span>
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="footer_wrap">
+            <p><img src="asdf.jpg" alt="moblie web" /></p>
+            <p>address</p>
+        </div>
+    </footer>
+</body>
+</html>
