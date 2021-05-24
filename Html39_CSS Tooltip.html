@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .tooltip1, .tooltip2, .tooltip3, .tooltip4, .tooltip5 {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    .tooltip1 .tooltiptext1,.tooltip2 .tooltiptext2, .tooltip3 .tooltiptext3, .tooltip4 .tooltiptext4, .tooltip5 .tooltiptext5 {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+    }
+    .tooltip3 .tooltiptext3{
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .tooltip4 .tooltiptext4{
+        position: absolute;
+        z-index: 1;
+        top:-5px;
+        right: 110%;
+    }
+    .tooltip1 .tooltiptext1{
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top:-5px;
+        left: 105%; /* right tooltip */
+    }
+    .tooltip2 .tooltiptext2{
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%; /* top tooltip */
+        margin-left: -60px;
+    }
+    .tooltip3 .tooltiptext3::after{
+        /* Position the tooltip */
+        content: "";
+        position: absolute;
+        bottom:100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+    .tooltip4 .tooltiptext4::after{
+        /* Position the tooltip */
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent black;
+    }
+    .tooltip5 .tooltiptext5{
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom:100%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip - takes 1 second to go from 0% to 100% opac */
+        opacity: 0;
+        transition: opacity 2s;
+    }    
+    .tooltip1:hover .tooltiptext1, .tooltip2:hover .tooltiptext2, .tooltip3:hover .tooltiptext3, .tooltip4:hover .tooltiptext4 {
+        visibility: visible;
+    }
+    .tooltip5:hover .tooltiptext5{
+        visibility: visible;
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <div class="tooltip1" style="left: 500px;">Hover over me
+        <span class="tooltiptext1">Tooltip text right</span>
+    </div>
+    <br><br><br><br>
+    <div class="tooltip2" style="left: 500px;">Hover over me
+        <span class="tooltiptext2">Tooltip text top</span>
+    </div>
+    <br><br><br><br>
+    <div class="tooltip3" style="left: 500px;">Hover over me
+        <span class="tooltiptext3">Tooltip text Arrow top</span>
+    </div>
+    <br><br><br><br>
+    <div class="tooltip4" style="left: 500px;">Hover over me
+        <span class="tooltiptext4">Tooltip text Arrow right</span>
+    </div>
+    <br><br><br><br>
+    <div class="tooltip5" style="left: 500px;">Hover over me
+        <span class="tooltiptext5">Tooltip text hidden property</span>
+    </div>
+</body>
+</html>
